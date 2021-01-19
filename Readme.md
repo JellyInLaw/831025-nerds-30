@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
-* Студент: [Максим Максим](https://up.htmlacademy.ru/htmlcss/30/user/831025).
-* Наставник: `Неизвестно`.
+- Студент: [Максим Максим](https://up.htmlacademy.ru/htmlcss/30/user/831025).
+- Наставник: [Никита Сигов](https://htmlacademy.ru/profile/crazer)
 
 ---
 
