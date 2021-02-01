@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,42 +9,71 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <title>blank</title>
   </head>
-  <body>
-    <header>
-      <a href="index.html"
+  <body class="page-body">
+    <header class="main-header">
+      <a href="#" class="main-header-logo"
         ><img src="img/nerds-logo.svg" alt="nerds-logo" width="160" height="65"
       /></a>
-      <nav>
-        <ul>
-          <li><a href="blank.html">Студия</a></li>
-          <li><a href="blank.html">Клиенты</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
-          <li><a href="blank.html">Контакты</a></li>
+      <nav class="main-nav">
+        <ul class="site-navigation">
+          <li class="site-nav-item">
+            <a class="site-nav-link" href="blank.html">Студия</a>
+          </li>
+          <li class="site-nav-item">
+            <a class="site-nav-link" href="blank.html">Клиенты</a>
+          </li>
+          <li class="site-nav-item">
+            <a class="site-nav-link" href="catalog.html">Магазин</a>
+          </li>
+          <li class="site-nav-item">
+            <a class="site-nav-link" href="blank.html">Контакты</a>
+          </li>
         </ul>
       </nav>
-      <a href="#">Корзина</a>
+      <a href="#" class="basket-link">Корзина</a>
     </header>
-    <main>
+    <main class="container">
       <h1>Пустая</h1>
     </main>
-    <footer>
-      <section>
-        <h2>Контакты</h2>
-        <h3>NЁRDS DESIGN STUDIO</h3>
-        <p>191186, Санкт-Петербург, <br />ул. Б. Конюшенная, д. 19/8</p>
-        <a href="tel:+78122757575">тел. +7 (812) 275-75-75</a><br />
-        <a href="#">Напишите нам</a>
-      </section>
-      <section>
-        <h2>Социальные сети</h2>
-        <ul>
-          <li><a href="#">Вконтакте</a></li>
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">Instagram</a></li>
-        </ul>
-        <p>Давайте дружить, это выгодно!</p>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
-      </section>
+    <footer class="main-footer">
+      <div class="footer-top">
+        <section class="contacts">
+          <h2>Контакты</h2>
+          <h3 class="contacts-title">NЁRDS DESIGN STUDIO</h3>
+          <p class="contacts-text">
+            191186, Санкт-Петербург,
+            <br />ул. Б. Конюшенная, д. 19/8
+          </p>
+          <a class="contacts-phone" href="tel:+78122757575"
+            >тел. +7 (812) 275-75-75</a
+          ><br />
+          <a class="button contacts-button" href="#">Напишите нам</a>
+        </section>
+        <div class="map">
+          <!--тут будет карта-->
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <section class="social">
+          <h2>Социальные сети</h2>
+          <ul class="social-list">
+            <li class="social-item">
+              <a class="social-link link-vk" href="#">Вконтакте</a>
+            </li>
+            <li class="social-item">
+              <a class="social-link link-fb" href="#">Facebook</a>
+            </li>
+            <li class="social-item">
+              <a class="social-link link-inst" href="#">Instagram</a>
+            </li>
+          </ul>
+        </section>
+        <section class="friendly-block">
+          <h2>Скидка</h2>
+          <p>Давайте дружить, это выгодно!</p>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </section>
+      </div>
     </footer>
   </body>
 </html>
