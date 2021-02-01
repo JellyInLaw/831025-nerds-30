@@ -1,0 +1,59 @@
+/*Fonts*/
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto"), url("../fonts/roboto.woff2") format("woff2"),
+    url("../fonts/roboto.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto-Bold";
+  src: local("Roboto-Bold"), url("../fonts/robotobold.woff2") format("woff2"),
+    url("../fonts/robotobold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto-Medium";
+  src: local("Roboto-Medium"),
+    url("../fonts/robotomedium.woff2") format("woff2"),
+    url("../fonts/robotomedium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+/*Variables*/
+:root {
+  --basic-black: #000;
+
+  --main-text-color: #283136;
+  --contact-text-color: #666;
+
+  --basic-red: #fb565a;
+
+  --button-color-red: #fb565a;
+  --button-color-red-hover: #e74246;
+  --button-color-red-active: #d7373b;
+
+  --button-color-green: #00ca74;
+  --button-color-green-hover: #00bc6c;
+  --button-color-green-active: #00aa62;
+
+  --button-color-yellow: #efc849;
+  --button-color-yellow-hover: #eab534;
+  --button-color-yellow-active: #e5a722;
+
+  --basic-grey: #eee;
+  --basic-gray-hover: #dfdfdf;
+  --basic-gray-active: #d5d5d5;
+
+  --catalog-win-color: rgba(77, 77, 77, 0.12);
+  --catalog-win-color-hover: rgba(77, 77, 77, 1);
+}
+/*Variables*/
+
+.main-header {
+  background-color: var(--catalog-win-color);
+}
