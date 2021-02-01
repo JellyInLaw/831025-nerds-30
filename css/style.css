@@ -23,10 +23,12 @@
   font-weight: 500;
   font-style: normal;
 }
+/*Fonts*/
 
 /*Variables*/
 :root {
   --basic-black: #000;
+  --basic-white: #fff;
 
   --main-text-color: #283136;
   --contact-text-color: #666;
@@ -54,6 +56,240 @@
 }
 /*Variables*/
 
+/* Global */
+.page-body {
+  min-width: 960px;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--main-text-color);
+}
+
+.page-body a {
+  text-decoration: none;
+}
+
+.page-body img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-body ul {
+  list-style: none;
+}
+
+.button {
+  font: inherit;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-red);
+  border: none;
+}
+/* Global */
+
+/* main-header */
 .main-header {
   background-color: var(--catalog-win-color);
 }
+
+.main-header-logo:hover,
+.main-header-logo:focus {
+  opacity: 0.7;
+}
+
+.main-header-logo:active {
+  opacity: 0.3;
+}
+
+.main-nav a,
+.basket-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--basic-black);
+}
+
+.main-nav a:hover,
+.basket-link:hover,
+.main-nav a:focus,
+.basket-link:focus {
+  color: var(--basic-red);
+}
+/* main-header */
+
+/* main*/
+.features {
+  background-color: var(--catalog-win-color);
+}
+
+.feature-item-title {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+  color: var(--basic-black);
+}
+
+.features-button {
+  background-color: var(--basic-red);
+}
+
+.features-button:hover {
+  background-color: var(--button-color-red-hover);
+}
+
+.features-button:active {
+  background-color: var(--button-color-red-active);
+}
+
+.services-item-title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: var(--basic-black);
+}
+
+.services-button {
+  line-height: 18px;
+}
+
+.service-web-button {
+  background-color: var(--button-color-red);
+}
+.service-web-button:hover,
+.service-web-button:focus {
+  background-color: var(--button-color-red-hover);
+}
+.service-web-button:active {
+  background-color: var(--button-color-red-active);
+}
+
+.service-app-button {
+  background-color: var(--button-color-green);
+}
+.service-app-button:hover,
+.service-app-button:focus {
+  background-color: var(--button-color-green-hover);
+}
+.service-app-button:active {
+  background-color: var(--button-color-green-active);
+}
+
+.service-presentation-button {
+  background-color: var(--button-color-yellow);
+}
+.service-presentation-button:hover,
+.service-presentation-button:focus {
+  background-color: var(--button-color-yellow-hover);
+}
+.service-presentation-button:active {
+  background-color: var(--button-color-yellow-active);
+}
+
+.about-us-text:first-child {
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 45px;
+  color: var(--basic-black);
+}
+
+.about-us-list-title {
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.about-us-item {
+  position: relative;
+}
+
+.about-us-item::before {
+  position: absolute;
+  content: "";
+  display: block;
+  height: 2px;
+  width: 25px;
+  background-color: var(--basic-red);
+  left: -40px;
+  top: 10px;
+}
+
+.about-us-aside-title {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.about-us-aside-item dt {
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 64px;
+}
+
+.item-percent {
+  font-size: 26px;
+  line-height: 40px;
+  vertical-align: top;
+}
+
+.client-item-logo img {
+  opacity: 0.2;
+}
+
+.client-item-logo img:hover {
+  opacity: 1;
+}
+.client-item-logo img:focus {
+  opacity: 1;
+}
+.client-item-logo img:active {
+  opacity: 0.1;
+}
+/* main */
+
+/* footer */
+.contacts-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.contacts-text {
+  line-height: 18px;
+}
+
+.contacts-phone {
+  color: inherit;
+  line-height: 18px;
+}
+
+.contacts-button:hover,
+.contacts-button:focus {
+  background-color: var(--button-color-red-hover);
+}
+
+.contacts-button:active {
+  background-color: var(--button-color-red-active);
+}
+
+.friendly-block p:first-of-type {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+  color: var(--basic-black);
+}
+
+.friendly-block p:last-of-type {
+  line-height: 22px;
+}
+/* footer */
