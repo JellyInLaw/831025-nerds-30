@@ -273,6 +273,15 @@
   line-height: 18px;
 }
 
+.contacts-button:hover,
+.contacts-button:focus {
+  background-color: var(--button-color-red-hover);
+}
+
+.contacts-button:active {
+  background-color: var(--button-color-red-active);
+}
+
 .friendly-block p:first-of-type {
   font-weight: bold;
   font-size: 36px;
