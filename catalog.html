@@ -23,7 +23,9 @@
             <a class="site-nav-link" href="blank.html">Клиенты</a>
           </li>
           <li class="site-nav-item">
-            <a class="site-nav-link" href="catalog.html">Магазин</a>
+            <a class="site-nav-link current-site-nav-link" href="catalog.html"
+              >Магазин</a
+            >
           </li>
           <li class="site-nav-item">
             <a class="site-nav-link" href="blank.html">Контакты</a>
@@ -33,7 +35,7 @@
       <a href="#" class="basket-link">Корзина</a>
     </header>
     <main class="container">
-      <h1>Магазин готовых шаблонов</h1>
+      <h1 class="catalog-title">Магазин готовых шаблонов</h1>
       <section class="filter-block">
         <h2>Фильтр товаров</h2>
         <form method="get" action="https://echo.htmlacademy.ru">
@@ -118,7 +120,9 @@
         <p class="filter-title">Сортировать:</p>
         <ul class="sort-by-property-list">
           <li class="sort-by-property-item">
-            <a class="sort-by-property-link" href="#">По цене</a>
+            <a class="sort-by-property-link current-sort-link" href="#"
+              >По цене</a
+            >
           </li>
           <li class="sort-by-property-item">
             <a class="sort-by-property-link" href="#">По типу</a>
@@ -128,8 +132,14 @@
           </li>
         </ul>
         <ul class="sort-from-to-list">
-          <li class="sort-from-to-item"><a href="#">По убыванию</a></li>
-          <li class="sort-from-to-item"><a href="#">По возрастанию</a></li>
+          <li class="sort-from-to-item">
+            <a class="sort-from-to-link current-sort-link" href="#"
+              >По убыванию</a
+            >
+          </li>
+          <li class="sort-from-to-item">
+            <a class="sort-from-to-link" href="#">По возрастанию</a>
+          </li>
         </ul>
       </section>
       <section class="products">
@@ -240,7 +250,7 @@
           <li class="pagination-item" style="visibility: hidden">
             <a href="#">Предыдущая</a>
           </li>
-          <li class="pagination-item"><a>1</a></li>
+          <li class="pagination-item current-pagination-item"><a>1</a></li>
           <li class="pagination-item"><a href="#">2</a></li>
           <li class="pagination-item"><a href="#">3</a></li>
           <li class="pagination-item"><a href="#">Следующая</a></li>
