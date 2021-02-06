@@ -11,81 +11,92 @@
   </head>
   <body class="page-body">
     <header class="main-header">
-      <a href="#" class="main-header-logo"
-        ><img src="img/nerds-logo.svg" alt="nerds-logo" width="160" height="65"
-      /></a>
-      <nav class="main-nav">
-        <ul class="site-navigation">
-          <li class="site-nav-item">
-            <a class="site-nav-link" href="blank.html">Студия</a>
-          </li>
-          <li class="site-nav-item">
-            <a class="site-nav-link" href="blank.html">Клиенты</a>
-          </li>
-          <li class="site-nav-item">
-            <a class="site-nav-link" href="catalog.html">Магазин</a>
-          </li>
-          <li class="site-nav-item">
-            <a class="site-nav-link" href="blank.html">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-      <a href="#" class="basket-link">Корзина</a>
+      <div class="container">
+        <a href="#" class="main-header-logo"
+          ><img
+            src="img/nerds-logo.svg"
+            alt="nerds-logo"
+            width="160"
+            height="65"
+        /></a>
+        <nav class="main-nav">
+          <ul class="site-navigation">
+            <li class="site-nav-item">
+              <a class="site-nav-link" href="blank.html">Студия</a>
+            </li>
+            <li class="site-nav-item">
+              <a class="site-nav-link" href="blank.html">Клиенты</a>
+            </li>
+            <li class="site-nav-item">
+              <a class="site-nav-link" href="catalog.html">Магазин</a>
+            </li>
+            <li class="site-nav-item">
+              <a class="site-nav-link" href="blank.html">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="#" class="basket-link">Корзина</a>
+      </div>
     </header>
-    <main class="container">
+
+    <main>
       <h1>Главная Нёрдс</h1>
       <section class="features">
-        <h2>Слайдер</h2>
-        <ul class="features-list">
-          <li class="feature-item">
-            <h3 class="feature-item-title">Долго, дорого,<br />скрупулезно.</h3>
-            <p class="feature-item-text">
-              Математически выверенный дизайн<br />для вашего сайта или
-              мобильного приложения.
-            </p>
-            <img
-              src="img/index-slide-1.png"
-              alt="Рекламное изображение, телефоны"
-              width="760"
-              height="431"
-            />
-          </li>
-          <li class="feature-item">
-            <h3 class="feature-item-title">
-              Любим математику
-              <br />как никто другой
-            </h3>
-            <p class="feature-item-text">
-              Никакого креатива, только математические формулы<br />для расчета
-              идеальных пропорций
-            </p>
-            <img
-              src="img/index-slide-2.png"
-              alt="Рекламное изображение, мониторы"
-              width="760"
-              height="431"
-            />
-          </li>
-          <li class="feature-item">
-            <h3 class="feature-item-title">
-              Только ночь,<br />
-              только хардкор
-            </h3>
-            <p class="feature-item-text">
-              Работать днем, как все? Мы против этого.<br />
-              Ближе к полуночи работа только начинается.
-            </p>
-            <img
-              src="img/index-slide-3.png"
-              alt="Рекламное изображение, планшет, телефон"
-              width="760"
-              height="431"
-            />
-          </li>
-        </ul>
-        <a class="button features-button" href="blank.html">Узнать больше</a>
+        <div class="container">
+          <h2>Слайдер</h2>
+          <ul class="features-list">
+            <li class="feature-item">
+              <h3 class="feature-item-title">
+                Долго, дорого,<br />скрупулезно.
+              </h3>
+              <p class="feature-item-text">
+                Математически выверенный дизайн<br />для вашего сайта или
+                мобильного приложения.
+              </p>
+              <img
+                src="img/index-slide-1.png"
+                alt="Рекламное изображение, телефоны"
+                width="760"
+                height="431"
+              />
+            </li>
+            <li class="feature-item hidden">
+              <h3 class="feature-item-title">
+                Любим математику
+                <br />как никто другой
+              </h3>
+              <p class="feature-item-text">
+                Никакого креатива, только математические формулы<br />для
+                расчета идеальных пропорций
+              </p>
+              <img
+                src="img/index-slide-2.png"
+                alt="Рекламное изображение, мониторы"
+                width="760"
+                height="431"
+              />
+            </li>
+            <li class="feature-item hidden">
+              <h3 class="feature-item-title">
+                Только ночь,<br />
+                только хардкор
+              </h3>
+              <p class="feature-item-text">
+                Работать днем, как все? Мы против этого.<br />
+                Ближе к полуночи работа только начинается.
+              </p>
+              <img
+                src="img/index-slide-3.png"
+                alt="Рекламное изображение, планшет, телефон"
+                width="760"
+                height="431"
+              />
+            </li>
+          </ul>
+          <a class="button features-button" href="blank.html">Узнать больше</a>
+        </div>
       </section>
-      <section class="services">
+      <section class="services container">
         <h2>Услуги</h2>
         <ul class="services-list">
           <li class="service-item">
@@ -123,61 +134,64 @@
           </li>
         </ul>
       </section>
-      <div class="about-us-wrapper">
+      <div class="container">
         <h2>О нас</h2>
-        <section class="about-us">
-          <p class="about-us-text">
-            Мы — маленькая, но гордая,<br />дизайн-студия из Краснодара.
-          </p>
-          <p class="about-us-text">
-            Исповедуем принципы минимализма и чистоты. Ставим математический
-            расчет<br />превыше креатива. Работаем не покладая рук, как роботы.
-          </p>
-          <h3 class="about-us-list-title">Выполняем заказы на разработку:</h3>
-          <ul class="about-us-list">
-            <li class="about-us-item">Веб-сайтов любой сложности</li>
-            <li class="about-us-item">
-              Мобильных приложений для iOS и Android
-            </li>
-            <li class="about-us-item">
-              Слайдшоу и видео для корпоративных презентаций
-            </li>
-          </ul>
-        </section>
-        <section class="about-us-aside">
-          <img
-            class="about-us-aside-logo"
-            src="img/nerds-illustration.jpg"
-            alt="NERDS"
-            width="360"
-            height="208"
-          />
-          <h3 class="about-us-aside-title">
-            с 2004 года Любим точность во всем:
-          </h3>
-          <ul class="about-us-aside-list">
-            <li class="about-us-aside-item">
-              <dl>
-                <dt>146<span class="item-percent">%</span></dt>
-                <dd>Уровень<br />самоотдачи</dd>
-              </dl>
-            </li>
-            <li class="about-us-aside-item">
-              <dl>
-                <dt>100<span class="item-percent">%</span></dt>
-                <dd>Соблюдение<br />сроков</dd>
-              </dl>
-            </li>
-            <li class="about-us-aside-item">
-              <dl>
-                <dt>50<span class="item-percent">%</span></dt>
-                <dd>Минимальная<br />предоплата</dd>
-              </dl>
-            </li>
-          </ul>
-        </section>
+        <div class="about-us-wrapper">
+          <section class="about-us">
+            <p class="about-us-text">
+              Мы — маленькая, но гордая,<br />дизайн-студия из Краснодара.
+            </p>
+            <p class="about-us-text">
+              Исповедуем принципы минимализма и чистоты. Ставим математический
+              расчет<br />превыше креатива. Работаем не покладая рук, как
+              роботы.
+            </p>
+            <h3 class="about-us-list-title">Выполняем заказы на разработку:</h3>
+            <ul class="about-us-list">
+              <li class="about-us-item">Веб-сайтов любой сложности</li>
+              <li class="about-us-item">
+                Мобильных приложений для iOS и Android
+              </li>
+              <li class="about-us-item">
+                Слайдшоу и видео для корпоративных презентаций
+              </li>
+            </ul>
+          </section>
+          <section class="about-us-aside">
+            <img
+              class="about-us-aside-logo"
+              src="img/nerds-illustration.jpg"
+              alt="NERDS"
+              width="360"
+              height="208"
+            />
+            <h3 class="about-us-aside-title">
+              с 2004 года Любим точность во всем:
+            </h3>
+            <ul class="about-us-aside-list">
+              <li class="about-us-aside-item">
+                <dl>
+                  <dt>146<span class="item-percent">%</span></dt>
+                  <dd>Уровень<br />самоотдачи</dd>
+                </dl>
+              </li>
+              <li class="about-us-aside-item">
+                <dl>
+                  <dt>100<span class="item-percent">%</span></dt>
+                  <dd>Соблюдение<br />сроков</dd>
+                </dl>
+              </li>
+              <li class="about-us-aside-item">
+                <dl>
+                  <dt>50<span class="item-percent">%</span></dt>
+                  <dd>Минимальная<br />предоплата</dd>
+                </dl>
+              </li>
+            </ul>
+          </section>
+        </div>
       </div>
-      <section class="clients">
+      <section class="clients container">
         <h2>Наши клиенты</h2>
         <ul class="clients-list">
           <li class="client-item">
@@ -219,7 +233,7 @@
         </ul>
       </section>
     </main>
-    <footer class="main-footer">
+    <footer class="main-footer container">
       <div class="footer-top">
         <section class="contacts">
           <h2>Контакты</h2>
