@@ -40,228 +40,242 @@
         <a href="#" class="basket-link">Корзина</a>
       </div>
     </header>
-    <main class="container">
-      <h1 class="catalog-title">Магазин готовых шаблонов</h1>
-      <section class="filter-block">
-        <h2>Фильтр товаров</h2>
-        <form method="get" action="https://echo.htmlacademy.ru">
-          <fieldset class="price-filter">
-            <legend class="filter-title price-title">Стоимость:</legend>
-            <!--тут будет ползунок-->
-          </fieldset>
-          <fieldset class="grid-filter">
-            <legend class="filter-title grid-title">Сетка:</legend>
-            <ul class="grid-filter-list">
-              <li class="grid-filter-item">
-                <input
-                  type="radio"
-                  name="product-grid"
-                  value="adaptive"
-                  id="filter-adaptive"
-                  checked
+    <main>
+      <div class="catalog-title-wrapper">
+        <div class="container">
+          <h1 class="catalog-title">Магазин готовых шаблонов</h1>
+        </div>
+      </div>
+      <div class="container main-catalog-content">
+        <section class="filter-block">
+          <h2>Фильтр товаров</h2>
+          <form method="get" action="https://echo.htmlacademy.ru">
+            <fieldset class="price-filter">
+              <legend class="filter-title price-title">Стоимость:</legend>
+              <!--тут будет ползунок-->
+            </fieldset>
+            <fieldset class="grid-filter">
+              <legend class="filter-title grid-title">Сетка:</legend>
+              <ul class="grid-filter-list">
+                <li class="grid-filter-item">
+                  <input
+                    type="radio"
+                    name="product-grid"
+                    value="adaptive"
+                    id="filter-adaptive"
+                    checked
+                  />
+                  <label for="filter-adaptive">Адаптивная</label>
+                </li>
+                <li class="grid-filter-item">
+                  <input
+                    type="radio"
+                    name="product-grid"
+                    value="fixed"
+                    id="filter-fixed"
+                  />
+                  <label for="filter-fixed">Фиксированная</label>
+                </li>
+                <li class="grid-filter-item">
+                  <input
+                    type="radio"
+                    name="product-grid"
+                    value="flexible"
+                    id="filter-flexible"
+                  />
+                  <label for="filter-flexible">Резиновая</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="features-filter">
+              <legend class="filter-title advantages-title">
+                Особенности:
+              </legend>
+              <ul class="features-filter-list">
+                <li class="features-filter-item">
+                  <input
+                    type="checkbox"
+                    name="slaider"
+                    id="filter-slaider"
+                    checked
+                  />
+                  <label for="filter-slaider">Слайдер</label>
+                </li>
+                <li class="features-filter-item">
+                  <input
+                    type="checkbox"
+                    name="block-of-advantages"
+                    id="filter-block-of-advantages"
+                  />
+                  <label for="filter-block-of-advantages"
+                    >Блок преимуществ</label
+                  >
+                </li>
+                <li class="features-filter-item">
+                  <input type="checkbox" name="news" id="filter-news" checked />
+                  <label for="filter-news">Новости</label>
+                </li>
+                <li class="features-filter-item">
+                  <input type="checkbox" name="galery" id="filter-galery" />
+                  <label for="filter-galery">Галерея</label>
+                </li>
+                <li class="features-filter-item">
+                  <input
+                    type="checkbox"
+                    name="trash-bin"
+                    id="filter-trash-bin"
+                  />
+                  <label for="filter-trash-bin">Корзина</label>
+                </li>
+              </ul>
+            </fieldset>
+            <button class="button filter-block-button" type="submit">
+              Показать
+            </button>
+          </form>
+        </section>
+        <section class="sorting">
+          <h2>Сортировка</h2>
+          <p class="filter-title">Сортировать:</p>
+          <ul class="sort-by-property-list">
+            <li class="sort-by-property-item">
+              <a class="sort-by-property-link current-sort-link" href="#"
+                >По цене</a
+              >
+            </li>
+            <li class="sort-by-property-item">
+              <a class="sort-by-property-link" href="#">По типу</a>
+            </li>
+            <li class="sort-by-property-item">
+              <a class="sort-by-property-link" href="#">По названию</a>
+            </li>
+          </ul>
+          <ul class="sort-from-to-list">
+            <li class="sort-from-to-item">
+              <a class="sort-from-to-link current-sort-link" href="#"
+                >По убыванию</a
+              >
+            </li>
+            <li class="sort-from-to-item">
+              <a class="sort-from-to-link" href="#">По возрастанию</a>
+            </li>
+          </ul>
+        </section>
+        <section class="products">
+          <h2>Список товаров</h2>
+          <ul class="products-list">
+            <li class="product-card">
+              <a href="#">
+                <img
+                  class="card-img"
+                  src="img/sedona-1.jpg"
+                  alt="Внешний вид сайта Sedona"
+                  width="359"
+                  height="578"
                 />
-                <label for="filter-adaptive">Адаптивная</label>
-              </li>
-              <li class="grid-filter-item">
-                <input
-                  type="radio"
-                  name="product-grid"
-                  value="fixed"
-                  id="filter-fixed"
+                <div class="product-card-wrapper">
+                  <h3 class="card-title">Sedona</h3>
+                  <p class="card-text">Информационный сайт для туристов</p>
+                </div>
+              </a>
+              <button class="button card-button" type="button">9 900 ₽</button>
+            </li>
+            <li class="product-card">
+              <a href="#">
+                <img
+                  class="card-img"
+                  src="img/pink-2.jpg"
+                  alt="Внешний вид сайта Apink"
+                  width="359"
+                  height="578"
                 />
-                <label for="filter-fixed">Фиксированная</label>
-              </li>
-              <li class="grid-filter-item">
-                <input
-                  type="radio"
-                  name="product-grid"
-                  value="flexible"
-                  id="filter-flexible"
+                <div class="product-card-wrapper">
+                  <h3 class="card-title">Pink App</h3>
+                  <p class="card-text">
+                    Продуктовый лендинг приложения для iOS и Android
+                  </p>
+                </div>
+              </a>
+              <button class="button card-button" type="button">9 900 ₽</button>
+            </li>
+            <li class="product-card">
+              <a href="#">
+                <img
+                  class="card-img"
+                  src="img/barbershop-3.jpg"
+                  alt="Внешний вид сайта Borodinski"
+                  width="359"
+                  height="578"
                 />
-                <label for="filter-flexible">Резиновая</label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="features-filter">
-            <legend class="filter-title advantages-title">Особенности:</legend>
-            <ul class="features-filter-list">
-              <li class="features-filter-item">
-                <input
-                  type="checkbox"
-                  name="slaider"
-                  id="filter-slaider"
-                  checked
+                <div class="product-card-wrapper">
+                  <h3 class="card-title">Barbershop</h3>
+                  <p class="card-text">Сайт салона красоты. Для мужчин, да.</p>
+                </div>
+              </a>
+              <button class="button card-button" type="button">9 900 ₽</button>
+            </li>
+            <li class="product-card">
+              <a href="#">
+                <img
+                  class="card-img"
+                  src="img/mishka-4.jpg"
+                  alt="Внешний вид сайта Mishka"
+                  width="359"
+                  height="578"
                 />
-                <label for="filter-slaider">Слайдер</label>
-              </li>
-              <li class="features-filter-item">
-                <input
-                  type="checkbox"
-                  name="block-of-advantages"
-                  id="filter-block-of-advantages"
+                <div class="product-card-wrapper">
+                  <h3 class="card-title">Mishka</h3>
+                  <p class="card-text">Интернет-магазин вязаных игрушек</p>
+                </div>
+              </a>
+              <button class="button card-button" type="button">9 900 ₽</button>
+            </li>
+            <li class="product-card-wrapper">
+              <a href="#">
+                <img
+                  class="card-img"
+                  src="img/aplus-5.jpg"
+                  alt="Внешний вид сайта Aplus"
+                  width="359"
+                  height="578"
                 />
-                <label for="filter-block-of-advantages">Блок преимуществ</label>
-              </li>
-              <li class="features-filter-item">
-                <input type="checkbox" name="news" id="filter-news" checked />
-                <label for="filter-news">Новости</label>
-              </li>
-              <li class="features-filter-item">
-                <input type="checkbox" name="galery" id="filter-galery" />
-                <label for="filter-galery">Галерея</label>
-              </li>
-              <li class="features-filter-item">
-                <input type="checkbox" name="trash-bin" id="filter-trash-bin" />
-                <label for="filter-trash-bin">Корзина</label>
-              </li>
-            </ul>
-          </fieldset>
-          <button class="button filter-block-button" type="submit">
-            Показать
-          </button>
-        </form>
-      </section>
-      <section class="sorting">
-        <h2>Сортировка</h2>
-        <p class="filter-title">Сортировать:</p>
-        <ul class="sort-by-property-list">
-          <li class="sort-by-property-item">
-            <a class="sort-by-property-link current-sort-link" href="#"
-              >По цене</a
-            >
-          </li>
-          <li class="sort-by-property-item">
-            <a class="sort-by-property-link" href="#">По типу</a>
-          </li>
-          <li class="sort-by-property-item">
-            <a class="sort-by-property-link" href="#">По названию</a>
-          </li>
-        </ul>
-        <ul class="sort-from-to-list">
-          <li class="sort-from-to-item">
-            <a class="sort-from-to-link current-sort-link" href="#"
-              >По убыванию</a
-            >
-          </li>
-          <li class="sort-from-to-item">
-            <a class="sort-from-to-link" href="#">По возрастанию</a>
-          </li>
-        </ul>
-      </section>
-      <section class="products">
-        <h2>Список товаров</h2>
-        <ul class="products-list">
-          <li class="product-card">
-            <a href="#">
-              <img
-                class="card-img"
-                src="img/sedona-1.jpg"
-                alt="Внешний вид сайта Sedona"
-                width="359"
-                height="578"
-              />
-              <div class="product-card-wrapper">
-                <h3 class="card-title">Sedona</h3>
-                <p class="card-text">Информационный сайт для туристов</p>
-              </div>
-            </a>
-            <button class="button card-button" type="button">9 900 ₽</button>
-          </li>
-          <li class="product-card">
-            <a href="#">
-              <img
-                class="card-img"
-                src="img/pink-2.jpg"
-                alt="Внешний вид сайта Apink"
-                width="359"
-                height="578"
-              />
-              <div class="product-card-wrapper">
-                <h3 class="card-title">Pink App</h3>
-                <p class="card-text">
-                  Продуктовый лендинг приложения для iOS и Android
-                </p>
-              </div>
-            </a>
-            <button class="button card-button" type="button">9 900 ₽</button>
-          </li>
-          <li class="product-card">
-            <a href="#">
-              <img
-                class="card-img"
-                src="img/barbershop-3.jpg"
-                alt="Внешний вид сайта Borodinski"
-                width="359"
-                height="578"
-              />
-              <div class="product-card-wrapper">
-                <h3 class="card-title">Barbershop</h3>
-                <p class="card-text">Сайт салона красоты. Для мужчин, да.</p>
-              </div>
-            </a>
-            <button class="button card-button" type="button">9 900 ₽</button>
-          </li>
-          <li class="product-card">
-            <a href="#">
-              <img
-                class="card-img"
-                src="img/mishka-4.jpg"
-                alt="Внешний вид сайта Mishka"
-                width="359"
-                height="578"
-              />
-              <div class="product-card-wrapper">
-                <h3 class="card-title">Mishka</h3>
-                <p class="card-text">Интернет-магазин вязаных игрушек</p>
-              </div>
-            </a>
-            <button class="button card-button" type="button">9 900 ₽</button>
-          </li>
-          <li class="product-card-wrapper">
-            <a href="#">
-              <img
-                class="card-img"
-                src="img/aplus-5.jpg"
-                alt="Внешний вид сайта Aplus"
-                width="359"
-                height="578"
-              />
-              <div class="product-card-wrapper">
-                <h3 class="card-title">A plus</h3>
-                <p class="card-text">Лендинг курсов повышения квалификации</p>
-              </div>
-            </a>
-            <button class="button card-button" type="button">9 900 ₽</button>
-          </li>
-          <li class="product-card">
-            <a href="#">
-              <img
-                class="card-img"
-                src="img/kvast-6.jpg"
-                alt="Внешний вид сайта kvast"
-                width="359"
-                height="578"
-              />
-              <div class="product-card-wrapper">
-                <h3 class="card-title">Кваст</h3>
-                <p class="card-text">
-                  Промо-сайт производителя крафтового кваса
-                </p>
-              </div>
-            </a>
-            <button class="button card-button" type="button">9 900 ₽</button>
-          </li>
-        </ul>
-        <ul class="pagination-list">
-          <li class="pagination-item" style="visibility: hidden">
-            <a href="#">Предыдущая</a>
-          </li>
-          <li class="pagination-item current-pagination-item"><a>1</a></li>
-          <li class="pagination-item"><a href="#">2</a></li>
-          <li class="pagination-item"><a href="#">3</a></li>
-          <li class="pagination-item"><a href="#">Следующая</a></li>
-        </ul>
-      </section>
+                <div class="product-card-wrapper">
+                  <h3 class="card-title">A plus</h3>
+                  <p class="card-text">Лендинг курсов повышения квалификации</p>
+                </div>
+              </a>
+              <button class="button card-button" type="button">9 900 ₽</button>
+            </li>
+            <li class="product-card">
+              <a href="#">
+                <img
+                  class="card-img"
+                  src="img/kvast-6.jpg"
+                  alt="Внешний вид сайта kvast"
+                  width="359"
+                  height="578"
+                />
+                <div class="product-card-wrapper">
+                  <h3 class="card-title">Кваст</h3>
+                  <p class="card-text">
+                    Промо-сайт производителя крафтового кваса
+                  </p>
+                </div>
+              </a>
+              <button class="button card-button" type="button">9 900 ₽</button>
+            </li>
+          </ul>
+          <ul class="pagination-list">
+            <li class="pagination-item hidden">
+              <a href="#">Предыдущая</a>
+            </li>
+            <li class="pagination-item current-pagination-item"><a>1</a></li>
+            <li class="pagination-item"><a href="#">2</a></li>
+            <li class="pagination-item"><a href="#">3</a></li>
+            <li class="pagination-item"><a href="#">Следующая</a></li>
+          </ul>
+        </section>
+      </div>
     </main>
     <footer class="main-footer container">
       <div class="footer-top">
