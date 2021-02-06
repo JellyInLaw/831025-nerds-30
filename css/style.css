@@ -370,12 +370,28 @@
   border-bottom: 2px solid var(--basic-red);
 }
 
+.catalog-title-wrapper {
+  padding-top: 78px;
+  padding-bottom: 108px;
+  background-color: var(--catalog-win-color);
+}
+
 .catalog-title {
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
+  text-align: center;
   color: var(--basic-black);
-  background-color: var(--basic-grey);
+}
+
+.filter-block fieldset {
+  border: none;
+}
+
+.main-catalog-content {
+  display: grid;
+  grid-template-columns: 260px 1fr 1fr;
+  grid-template-rows: 30px auto;
 }
 
 .filter-title {
@@ -397,6 +413,23 @@
   color: var(--basic-black);
 }
 
+.sorting {
+  grid-row: 1/2;
+  grid-column: 2/4;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sort-by-property-item:not(:last-child) {
+  margin-right: 25px;
+}
+
+.sort-by-property-list,
+.sort-from-to-list {
+  display: flex;
+  justify-content: space-between;
+}
+
 .sort-by-property-link,
 .sort-from-to-link {
   font-size: 14px;
@@ -413,6 +446,18 @@
 
 .current-sort-link {
   opacity: 1;
+}
+
+.products {
+  grid-column: 2/4;
+  grid-row: 2/-1;
+}
+
+.products-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 42px;
+  row-gap: 31px;
 }
 
 .card-title {
@@ -444,6 +489,15 @@
 
 .card-button:active {
   background-color: var(--button-color-red-active);
+}
+
+.pagination-list {
+  display: flex;
+  justify-content: start;
+}
+
+.pagination-item {
+  margin-right: 11px;
 }
 
 .pagination-item a {
