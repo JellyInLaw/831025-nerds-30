@@ -652,6 +652,10 @@
   color: var(--basic-black);
 }
 
+.filter-block-button:hover {
+  background-color: var(--basic-gray-hover);
+}
+
 .sorting {
   display: flex;
   justify-content: space-between;
@@ -828,10 +832,6 @@
 .pagination-item a:hover,
 .pagination-item a:focus {
   background-color: var(--basic-gray-hover);
-}
-
-.pagination-item a:active {
-  background-color: var(--basic-gray-active);
 }
 
 .current-pagination-item a {
