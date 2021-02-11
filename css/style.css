@@ -697,6 +697,7 @@
   border-radius: 50%;
   left: -36px;
   top: -5px;
+  opacity: 0.4;
 }
 
 .grid-filter-item input:checked + label::after {
@@ -708,6 +709,12 @@
   left: -26px;
   background-color: var(--radio-grey);
   border-radius: 50%;
+  opacity: 0.4;
+}
+
+.grid-filter-item:hover input + label::before,
+.grid-filter-item:hover input:checked + label::after {
+  opacity: 1;
 }
 
 .filter-block-button {
