@@ -50,6 +50,8 @@
   --basic-grey: #eee;
   --basic-gray-hover: #dfdfdf;
   --basic-gray-active: #d5d5d5;
+  --radio-grey: #4d4d4d;
+
   --current-pagination-item: #dbdbdb;
 
   --social-basic-color: #e1e1e1;
@@ -674,8 +676,40 @@
 
 .grid-filter-item label,
 .features-filter-item label {
+  display: block;
   line-height: 19px;
+  margin-left: 36px;
+  position: relative;
+  cursor: pointer;
 }
+
+.grid-filter-item:not(:last-child),
+.features-filter-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.grid-filter-item input + label::before {
+  content: "";
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  border: 4px solid var(--radio-grey);
+  border-radius: 50%;
+  left: -36px;
+  top: -5px;
+}
+
+.grid-filter-item input:checked + label::after {
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  top: 5px;
+  left: -26px;
+  background-color: var(--radio-grey);
+  border-radius: 50%;
+}
+
 .filter-block-button {
   font-weight: 500;
   line-height: 18px;
