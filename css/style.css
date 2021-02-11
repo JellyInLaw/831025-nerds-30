@@ -950,3 +950,15 @@
   width: 260px;
 }
 /* catalog */
+
+/*blank page*/
+.page-blank .main-header {
+  padding-bottom: 50px;
+}
+
+.blank-title {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 80px;
+}
+/*blank page*/
