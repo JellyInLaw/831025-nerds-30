@@ -52,7 +52,31 @@
           <form method="get" action="https://echo.htmlacademy.ru">
             <fieldset class="price-filter">
               <legend class="filter-title price-title">Стоимость:</legend>
-              <!--тут будет ползунок-->
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar" style="width: 30%; margin-left: 20%"></div>
+                  </div>
+                  <div
+                    class="toggle toggle-min"
+                    tabindex="0"
+                    style="left: 20%"
+                  ></div>
+                  <div
+                    class="toggle toggle-max"
+                    tabindex="0"
+                    style="left: 50%"
+                  ></div>
+                </div>
+                <div class="price-controls">
+                  <label class="min-price">
+                    от <input type="number" name="min-price" value="0" />
+                  </label>
+                  <label class="max-price">
+                    до <input type="number" name="max-price" value="15000" />
+                  </label>
+                </div>
+              </div>
             </fieldset>
             <fieldset class="grid-filter">
               <legend class="filter-title grid-title">Сетка:</legend>
