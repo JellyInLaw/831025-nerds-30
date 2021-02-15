@@ -252,6 +252,7 @@
   border-radius: 50%;
   background-color: var(--basic-white);
   z-index: 20;
+  cursor: pointer;
 }
 
 .slider-controls .current-slider-controls::before {
