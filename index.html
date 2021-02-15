@@ -40,11 +40,11 @@
     </header>
     <main>
       <h1 class="visually-hidden">Главная Нёрдс</h1>
-      <section class="features">
+      <section class="features slider">
         <div class="container">
           <h2 class="visually-hidden">Слайдер</h2>
-          <ul class="features-list">
-            <li class="feature-item">
+          <ul class="features-list slider-list">
+            <li class="feature-item slide current-slide">
               <h3 class="feature-item-title">
                 Долго, дорого,<br />скрупулезно.
               </h3>
@@ -58,7 +58,7 @@
                 alt="Рекламное изображение, телефоны"
               />
             </li>
-            <li class="feature-item hidden">
+            <li class="feature-item slide hidden">
               <h3 class="feature-item-title">
                 Любим математику
                 <br />как никто другой
@@ -73,7 +73,7 @@
                 alt="Рекламное изображение, мониторы"
               />
             </li>
-            <li class="feature-item hidden">
+            <li class="feature-item slide hidden">
               <h3 class="feature-item-title">
                 Только ночь,<br />
                 только хардкор
@@ -89,6 +89,15 @@
               />
             </li>
           </ul>
+          <div class="slider-controls">
+            <button
+              type="button"
+              aria-label="Первый слайд"
+              class="current-slider-controls"
+            ></button>
+            <button type="button" aria-label="Второй слайд"></button>
+            <button type="button" aria-label="Третий слайд"></button>
+          </div>
           <a class="button features-button" href="blank.html">Узнать больше</a>
         </div>
       </section>

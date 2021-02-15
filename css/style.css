@@ -57,6 +57,8 @@
 
   --current-pagination-item: #dbdbdb;
 
+  --current-slider-controls: #c1c1c1;
+
   --social-basic-color: #e1e1e1;
 
   --catalog-win-color: rgba(77, 77, 77, 0.12);
@@ -226,6 +228,45 @@
 .features {
   padding: 78px 0 80px 0;
   background-color: var(--catalog-win-color);
+}
+
+.slider {
+  position: relative;
+}
+
+.slider-controls {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 97px;
+  display: flex;
+  justify-content: space-around;
+  width: 88px;
+}
+
+.slider-controls button {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--basic-white);
+}
+
+.slider-controls .current-slider-controls::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 5px;
+  left: 5px;
+  width: 4px;
+  height: 4px;
+  border: 2px solid var(--current-slider-controls);
+  border-radius: 50%;
+}
+
+.current-slide {
+  display: block;
 }
 
 .features-list {
