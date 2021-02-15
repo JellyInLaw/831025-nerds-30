@@ -241,7 +241,7 @@
   bottom: 97px;
   display: flex;
   justify-content: space-around;
-  width: 88px;
+  min-width: 88px;
 }
 
 .slider-controls button {
