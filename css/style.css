@@ -1008,6 +1008,9 @@
 
 .card-top-circles {
   margin-left: 16px;
+  width: 51px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .product-card .circle {
@@ -1017,10 +1020,6 @@
   margin-top: 13px;
   border-radius: 50%;
   background-color: var(--basic-white);
-}
-
-.product-card .circle:not(:last-child) {
-  margin-right: 9px;
 }
 
 .card-title {
