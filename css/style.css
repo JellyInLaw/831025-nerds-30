@@ -706,7 +706,7 @@
 .main-catalog-content {
   display: grid;
   grid-template-columns: 260px 1fr;
-  grid-template-rows: 30px auto;
+  grid-template-rows: 78px auto;
   padding-top: 55px;
   column-gap: 140px;
 }
@@ -718,6 +718,10 @@
   margin: 0 0 16px 0;
   text-transform: uppercase;
   color: var(--basic-black);
+}
+
+.price-title {
+  margin-bottom: 48px;
 }
 
 .range-controls {
@@ -880,9 +884,11 @@
 .sorting {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 48px;
 }
 
 .sort-title {
+  margin: 0;
   margin-right: auto;
 }
 
@@ -944,7 +950,6 @@
 }
 
 .products {
-  padding-top: 48px;
   grid-column: 2/3;
   grid-row: 2/-1;
   row-gap: 31px;
