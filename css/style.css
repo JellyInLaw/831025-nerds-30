@@ -52,6 +52,8 @@
   --basic-gray-active: #d5d5d5;
   --radio-grey: #4d4d4d;
 
+  --input-hover-color: #b4b9bb;
+
   --scale-color: #d7dcdf;
   --toggle-color: #ababab;
 
@@ -1091,3 +1093,110 @@
   padding-top: 80px;
 }
 /*blank page*/
+
+/* modal */
+.modal {
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  max-width: 960px;
+  height: 590px;
+  padding: 63px 100px 84px 100px;
+  background-color: white;
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.modal-title {
+  margin: 0;
+  padding: 0 0 37px 0;
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 53px;
+  color: var(--basic-black);
+}
+
+.modal-form {
+  display: grid;
+  column-gap: 40px;
+  row-gap: 34px;
+  grid-template-columns: 360px 360px;
+}
+
+.modal-group-textarea {
+  grid-column: 1/3;
+  margin-bottom: 13px;
+}
+
+.modal-group textarea,
+.modal-group input {
+  width: 100%;
+  border: 2px solid var(--scale-color);
+  box-sizing: border-box;
+  border-radius: 3px;
+  padding: 16px;
+}
+
+.modal-group textarea:hover,
+.modal-group input:hover {
+  border-color: var(--input-hover-color);
+}
+
+.modal-group textarea:focus,
+.modal-group input:focus {
+  border-color: var(--basic-black);
+  outline: none;
+}
+
+.modal label {
+  font-weight: bold;
+  line-height: 18px;
+  display: block;
+  margin-bottom: 9px;
+}
+
+.modal-group-textarea textarea {
+  resize: none;
+}
+
+.modal-button {
+  width: 260px;
+}
+
+.modal-button:hover {
+  background-color: var(--button-color-red-hover);
+}
+
+.modal-button:active {
+  background-color: var(--button-color-red-active);
+}
+
+.modal-close-wrapper {
+  position: absolute;
+  top: 78px;
+  right: 90px;
+}
+
+.modal-close {
+  width: 21px;
+  height: 21px;
+  border: none;
+  background-color: transparent;
+  position: relative;
+  background: url(../img/close-cross.svg) no-repeat center center;
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+.modal-close:hover {
+  opacity: 1;
+}
+
+.modal-close:active {
+  opacity: 0.1;
+}
+
+/* modal */
