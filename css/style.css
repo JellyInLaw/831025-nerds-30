@@ -524,10 +524,6 @@
   opacity: 0.2;
 }
 
-.client-item p {
-  display: none;
-}
-
 .client-item:not(:last-child) {
   border-right: 2px solid var(--basic-grey);
 }
@@ -1006,12 +1002,12 @@
   text-align: center;
   background-color: var(--basic-grey);
   padding: 26px 45px 44px 45px;
-  z-index: -1;
+  display: none;
   bottom: 0px;
 }
 
 .product-card:hover .product-card-wrapper {
-  z-index: 1;
+  display: block;
 }
 
 .product-list li:hover {
@@ -1055,7 +1051,10 @@
 .card-text {
   line-height: 18px;
   margin-bottom: 32px;
+  max-height: 430px;
+  max-width: 267px;
   color: var(--contact-text-color);
+  word-wrap: break-word;
 }
 
 .card-button {
