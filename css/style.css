@@ -327,7 +327,7 @@
 }
 
 .service-item {
-  width: 360px;
+  width: 300px;
 }
 
 .service-item:first-child::before {
@@ -868,6 +868,18 @@
 .features-filter-item:hover input:checked + label::after {
   background: url(../img/shape-features-filter-not-opacity.svg) no-repeat center
     center;
+}
+
+.grid-filter-item input[disabled] + label::before,
+.grid-filter-item input[disabled] + label::after,
+.features-filter-item input[disabled] + label::before,
+.features-filter-item input[disabled] + label::after {
+  opacity: 0.3;
+}
+
+.grid-filter-item input[disabled] + label,
+.features-filter-item input[disabled] + label {
+  opacity: 0.3;
 }
 
 .filter-block-button {
