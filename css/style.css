@@ -588,9 +588,8 @@
   background-color: var(--button-color-red-active);
 }
 
-.map img {
+.map iframe {
   width: 100%;
-  height: 416px;
 }
 
 .footer-bottom {
