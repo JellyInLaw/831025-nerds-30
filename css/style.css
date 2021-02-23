@@ -72,6 +72,7 @@
   --toggle-color: #ababab;
 
   --current-pagination-item: #dbdbdb;
+  --active-pagination-item: rgba(24,0,0,0.3);
 
   --current-slider-controls: #c1c1c1;
 
@@ -977,6 +978,10 @@
   color: var(--basic-black);
 }
 
+.filter-block-button:active {
+color:var(--active-pagination-item);
+}
+
 .filter-block-button:hover {
   background-color: var(--basic-gray-hover);
 }
@@ -1248,6 +1253,12 @@
   border-radius: 3px;
   width: 44px;
   height: 44px;
+}
+
+.pagination-item a:active{
+  background: var(--basic-gray-active);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  color: var(--active-pagination-item);
 }
 
 .pagination-item:last-child a {
