@@ -5,6 +5,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 /*Fonts*/
 @font-face {
   font-family: "Roboto";
@@ -135,6 +142,12 @@
   padding-top: 17px;
   padding-bottom: 15px;
   padding: 17px 0 15px 0;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+  -webkit-box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+          box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
 .hidden {
