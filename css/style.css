@@ -571,7 +571,7 @@
   position: relative;
 }
 
-.client-item:not(:last-child)::after {
+.client-item::after {
   content: "";
   width: 2px;
   height: 52px;
@@ -580,6 +580,10 @@
   display: block;
   position: absolute;
   background-color: var(--basic-grey);
+}
+
+.client-item:nth-child(4n)::after {
+  display: none;
 }
 
 .client-item-logo {
@@ -1113,8 +1117,8 @@
 
 .products-list {
   margin: 0;
+  margin-bottom: 30px;
   padding: 0;
-  margin-bottom: 55px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 42px 1fr;
@@ -1253,6 +1257,7 @@
 
 .pagination-item {
   margin-right: 11px;
+  margin-top: 25px;
 }
 
 .pagination-item a {
