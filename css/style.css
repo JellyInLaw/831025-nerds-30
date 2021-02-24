@@ -199,7 +199,9 @@
 }
 
 .basket-link {
+  box-sizing: border-box;
   padding-top: 26px;
+  height: 73px;
 }
 
 .site-navigation {
@@ -208,6 +210,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  justify-content: center;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
