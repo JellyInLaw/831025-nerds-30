@@ -965,6 +965,11 @@
   opacity: 1;
 }
 
+input[name="product-grid"]:focus + label::before,
+input[name="product-grid"]:focus + label::after {
+  opacity: 1;
+}
+
 .filter-block .features-filter {
   margin-bottom: 52px;
 }
@@ -996,6 +1001,15 @@
 }
 
 .features-filter-item:hover input:checked + label::after {
+  background: url(../img/shape-features-filter-not-opacity.svg) no-repeat center
+    center;
+}
+
+input[type="checkbox"]:focus + label::before {
+  opacity: 1;
+}
+
+input[type="checkbox"]:focus + label::after {
   background: url(../img/shape-features-filter-not-opacity.svg) no-repeat center
     center;
 }
