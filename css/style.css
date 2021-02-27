@@ -1181,12 +1181,12 @@ input[type="checkbox"]:focus + label::after {
   text-align: center;
   background-color: var(--basic-grey);
   padding: 26px 45px 37px 45px;
-  display: none;
+  z-index: -1;
   bottom: 0px;
 }
 
 .product-card:hover .product-card-wrapper {
-  display: block;
+  z-index: 1;
 }
 
 .product-list li:hover {
@@ -1257,6 +1257,15 @@ input[type="checkbox"]:focus + label::after {
 
 .card-button:active {
   background-color: var(--button-color-red-active);
+}
+
+.product-card-wrapper:focus-within {
+  z-index: 1;
+}
+
+.product-card:focus-within {
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .pagination-list {
