@@ -32,7 +32,28 @@
 }
 /*Fonts*/
 
-/*Variables*/
+/*animations*/
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+/*animations*/
+
 :root {
   --basic-black: #000;
   --basic-white: #fff;
@@ -1375,6 +1396,12 @@ input[type="checkbox"]:focus + label::after {
   background-color: white;
   -webkit-box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.modal-error {
+  animation-name: shake;
+  animation-duration: 0.6s;
 }
 
 .modal-title {
@@ -1423,6 +1450,19 @@ input[type="checkbox"]:focus + label::after {
 .modal-group input:focus {
   border-color: var(--basic-black);
   outline: none;
+}
+
+.modal-group .is-empty {
+  border: 2px solid var(--button-color-red-hover);
+}
+
+.modal-group .is-empty::placeholder {
+  color: var(--button-color-red-hover);
+}
+
+.modal-group .is-empty:hover,
+.modal-group .is-empty:focus {
+  border: 2px solid var(--button-color-red-hover);
 }
 
 .modal label {
