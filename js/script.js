@@ -31,14 +31,27 @@ closeModal.addEventListener("click", function () {
   modal.classList.remove("modal-error");
 });
 
+function addingIsEmpty(input) {
+  input.classList.add("is-empty");
+}
+
+function removeIsEmpty(input) {
+  input.classList.remove("is-empty");
+}
+
 form.addEventListener("submit", function (evt) {
   if (!nameInput.value || !emailInput.value) {
     evt.preventDefault();
-    modal.classList.add("modal-error");
+    modal.classList.toggle("modal-error");
     if (!nameInput.value) {
-      nameInput.classList.add("is-empty");
+      addingIsEmpty(nameInput);
     } else {
-      emailInput.classList.add("is-empty");
+      removeIsEmpty(nameInput);
+    }
+    if (!emailInput.value) {
+      addingIsEmpty(emailInput);
+    } else {
+      removeIsEmpty(emailInput);
     }
   } else {
     localStorage.setItem("name", nameInput.value);
