@@ -10,7 +10,7 @@ const storageName = localStorage.getItem("name");
 const storageEmail = localStorage.getItem("email");
 
 try {
-  let storage = localStorage.getItem("name");
+  const storage = localStorage.getItem("name");
 } catch (error) {
   isStorageSupport = false;
 }
@@ -38,11 +38,6 @@ btnWriteUs.addEventListener("click", function (evt) {
   }
 });
 
-closeModal.addEventListener("click", function () {
-  modal.classList.add("hidden");
-  modal.classList.remove("modal-error");
-});
-
 function addingIsEmpty(input) {
   input.classList.add("is-empty");
 }
@@ -50,6 +45,14 @@ function addingIsEmpty(input) {
 function removeIsEmpty(input) {
   input.classList.remove("is-empty");
 }
+
+closeModal.addEventListener("click", function () {
+  modal.classList.add("hidden");
+  modal.classList.remove("modal-error");
+
+  removeIsEmpty(nameInput);
+  removeIsEmpty(emailInput);
+});
 
 form.addEventListener("submit", function (evt) {
   if (!nameInput.value || !emailInput.value) {
@@ -78,6 +81,9 @@ window.addEventListener("keydown", function (evt) {
     if (!modal.classList.contains("hidden")) {
       modal.classList.add("hidden");
       modal.classList.remove("modal-error");
+
+      removeIsEmpty(nameInput);
+      removeIsEmpty(emailInput);
     }
   }
 });
