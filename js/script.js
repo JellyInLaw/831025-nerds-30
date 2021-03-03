@@ -4,11 +4,13 @@ const closeModal = modal.querySelector(".modal-close");
 const form = modal.querySelector(".modal-form");
 const nameInput = form.querySelector("[name = name]");
 const emailInput = form.querySelector("[name = email]");
+const textarea = form.querySelector(".textarea");
 let isStorageSupport = true;
-const storage = localStorage.getItem("name");
+const storageName = localStorage.getItem("name");
+const storageEmail = localStorage.getItem("email");
 
 try {
-  storage = localStorage.getItem("name");
+  let storage = localStorage.getItem("name");
 } catch (error) {
   isStorageSupport = false;
 }
@@ -16,13 +18,23 @@ try {
 btnWriteUs.addEventListener("click", function (evt) {
   evt.preventDefault();
   modal.classList.remove("hidden");
-  if (storage) {
-    nameInput.value = storage;
-  }
-  if (nameInput.value == storage) {
-    emailInput.focus();
-  } else {
-    nameInput.focus();
+
+  if (isStorageSupport) {
+    nameInput.value = localStorage.getItem("name");
+    emailInput.value = localStorage.getItem("email");
+    textarea.focus();
+
+    if (!textarea.value) {
+      textarea.focus();
+    }
+
+    if (!emailInput.value) {
+      emailInput.focus();
+    }
+
+    if (!nameInput.value) {
+      nameInput.focus();
+    }
   }
 });
 
@@ -43,11 +55,13 @@ form.addEventListener("submit", function (evt) {
   if (!nameInput.value || !emailInput.value) {
     evt.preventDefault();
     modal.classList.toggle("modal-error");
+
     if (!nameInput.value) {
       addingIsEmpty(nameInput);
     } else {
       removeIsEmpty(nameInput);
     }
+
     if (!emailInput.value) {
       addingIsEmpty(emailInput);
     } else {
@@ -55,6 +69,7 @@ form.addEventListener("submit", function (evt) {
     }
   } else {
     localStorage.setItem("name", nameInput.value);
+    localStorage.setItem("email", emailInput.value);
   }
 });
 
