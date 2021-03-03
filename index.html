@@ -6,7 +6,7 @@
     <link rel="icon" href="favicon.ico" />
     <link rel="icon" href="img/favicon/182.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>HTML Academy: Нёрдс</title>
   </head>
   <body class="page-body">
@@ -61,10 +61,9 @@
                 >Узнать больше</a
               >
             </li>
-            <li class="feature-item slide hidden">
+            <li class="feature-item slide ">
               <h3 class="feature-item-title">
-                Любим математику
-                <br />как никто другой
+                Любим математику<br />как никто другой
               </h3>
               <p class="feature-item-text">
                 Никакого креатива, только математические формулы<br />для
@@ -79,7 +78,7 @@
                 >Узнать больше</a
               >
             </li>
-            <li class="feature-item slide hidden">
+            <li class="feature-item slide ">
               <h3 class="feature-item-title">
                 Только ночь,<br />
                 только хардкор
@@ -100,12 +99,13 @@
           </ul>
           <div class="slider-controls">
             <button
+            class="slider-control"
               type="button"
               aria-label="Первый слайд"
-              class="current-slider-controls"
+              class="current-slider-control"
             ></button>
-            <button type="button" aria-label="Второй слайд"></button>
-            <button type="button" aria-label="Третий слайд"></button>
+            <button class="slider-control" type="button" aria-label="Второй слайд"></button>
+            <button class="slider-control" type="button" aria-label="Третий слайд"></button>
           </div>
         </div>
       </section>
@@ -343,6 +343,6 @@
         <button class="modal-close" type="button" aria-label="Закрыть"></button>
       </div>
     </section>
-    <script src="js/script.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

@@ -62,7 +62,26 @@ window.addEventListener("keydown", function (evt) {
   if (evt.keyCode == 27) {
     if (!modal.classList.contains("hidden")) {
       modal.classList.add("hidden");
-      modal.classList.add("modal-error");
+      modal.classList.remove("modal-error");
     }
   }
 });
+
+const slides = document.querySelectorAll(".slide");
+const controls = document.querySelectorAll(".slider-control");
+
+controls[0].classList.add("current-slider-control");
+
+for (let index = 0; index < controls.length; index++) {
+  const control = controls[index];
+  control.addEventListener("click", function () {
+    let sliderControl = document.querySelector(".current-slider-control");
+    let currentSlide = document.querySelector(".current-slide");
+
+    sliderControl.classList.remove("current-slider-control");
+    currentSlide.classList.remove("current-slide");
+
+    control.classList.add("current-slider-control");
+    slides[index].classList.add("current-slide");
+  });
+}

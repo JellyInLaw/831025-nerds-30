@@ -24,8 +24,7 @@
 
 @font-face {
   font-family: "Roboto-Medium";
-  src: local("Roboto-Medium"),
-    url("../fonts/robotomedium.woff2") format("woff2"),
+  src: local("Roboto-Medium"), url("../fonts/robotomedium.woff2") format("woff2"),
     url("../fonts/robotomedium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
@@ -312,7 +311,7 @@
   cursor: pointer;
 }
 
-.slider-controls .current-slider-controls::before {
+.slider-controls .current-slider-control::before {
   content: "";
   position: absolute;
   display: block;
@@ -322,6 +321,10 @@
   height: 4px;
   border: 2px solid var(--current-slider-controls);
   border-radius: 50%;
+}
+
+.slide {
+  display: none;
 }
 
 .current-slide {
@@ -345,7 +348,7 @@
   line-height: 55px;
   color: var(--basic-black);
   margin-bottom: 27px;
-  max-width: 450px;
+  max-width: 508px;
 }
 
 .feature-item-text {
