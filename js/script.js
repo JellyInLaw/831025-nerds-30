@@ -91,7 +91,9 @@ window.addEventListener("keydown", function (evt) {
 const slides = document.querySelectorAll(".slide");
 const controls = document.querySelectorAll(".slider-control");
 
-controls[0].classList.add("current-slider-control");
+if (document.querySelector("body").classList.contains(".page-index")) {
+  controls[0].classList.add("current-slider-control");
+}
 
 for (let index = 0; index < controls.length; index++) {
   const control = controls[index];
