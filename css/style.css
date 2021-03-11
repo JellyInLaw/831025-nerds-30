@@ -1001,8 +1001,8 @@
   opacity: 1;
 }
 
-input[name="product-grid"]:focus + label::before,
-input[name="product-grid"]:focus + label::after {
+.grid-filter-item input[name="product-grid"]:focus + label::before,
+.grid-filter-item input[name="product-grid"]:focus + label::after {
   opacity: 1;
 }
 
