@@ -1001,8 +1001,8 @@
   opacity: 1;
 }
 
-input[name="product-grid"]:focus + label::before,
-input[name="product-grid"]:focus + label::after {
+.grid-filter-item input[name="product-grid"]:focus + label::before,
+.grid-filter-item input[name="product-grid"]:focus + label::after {
   opacity: 1;
 }
 
@@ -1041,11 +1041,11 @@ input[name="product-grid"]:focus + label::after {
     center;
 }
 
-input[type="checkbox"]:focus + label::before {
+.features-filter-item input[type="checkbox"]:focus + label::before {
   opacity: 1;
 }
 
-input[type="checkbox"]:focus + label::after {
+.features-filter-item input[type="checkbox"]:focus + label::after {
   background: url(../img/shape-features-filter-not-opacity.svg) no-repeat center
     center;
 }
