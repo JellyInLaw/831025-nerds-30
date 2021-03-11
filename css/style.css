@@ -770,6 +770,25 @@
 
 .social-link:active {
   background-color: var(--button-color-red-active);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.link-vk:active {
+  background-image: url(../img/vk-icon-darker.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.link-fb:active {
+  background-image: url(../img/fb-darker.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.link-inst:active {
+  background-image: url(../img/../img/insta-icon-darker.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .friendly-block {
