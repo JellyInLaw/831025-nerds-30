@@ -1249,6 +1249,7 @@ input[type="checkbox"]:focus + label::after {
 
 .product-card .circle {
   display: inline-block;
+  vertical-align: center;
   width: 14px;
   height: 14px;
   border-radius: 50%;
