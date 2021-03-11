@@ -1172,6 +1172,16 @@
   opacity: 0.6;
 }
 
+.sort-by-property-link:active,
+.sort-from-to-link:active {
+  opacity: 1;
+}
+
+.sort-by-property-link:active {
+  color: var(--basic-black);
+  opacity: 1;
+}
+
 .current-sort-link {
   opacity: 1;
 }
