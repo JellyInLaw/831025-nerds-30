@@ -18,6 +18,7 @@ try {
 btnWriteUs.addEventListener("click", function (evt) {
   evt.preventDefault();
   modal.classList.remove("hidden");
+  modal.classList.add("modal-animation-open");
 
   if (isStorageSupport) {
     nameInput.value = localStorage.getItem("name");
