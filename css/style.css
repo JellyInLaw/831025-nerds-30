@@ -377,7 +377,7 @@
   line-height: 55px;
   color: var(--basic-black);
   margin-bottom: 27px;
-  max-width: 508px;
+  max-width: 514px;
 }
 
 .feature-item-text {
@@ -722,8 +722,22 @@
   background-color: var(--button-color-red-active);
 }
 
+.map {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.map img {
+  height: 416px;
+}
+
 .map iframe {
   width: 100%;
+}
+
+.map iframe + img {
+  display: none;
 }
 
 .footer-bottom {

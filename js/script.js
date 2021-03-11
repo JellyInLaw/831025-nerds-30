@@ -56,6 +56,7 @@ closeModal.addEventListener("click", function () {
 });
 
 form.addEventListener("submit", function (evt) {
+  modal.classList.remove("modal-animation-open");
   if (!nameInput.value || !emailInput.value) {
     evt.preventDefault();
     modal.classList.toggle("modal-error");
@@ -107,5 +108,6 @@ for (let index = 0; index < controls.length; index++) {
 
     control.classList.add("current-slider-control");
     slides[index].classList.add("current-slide");
+    slides[index].classList.add("modal-animation-open");
   });
 }
