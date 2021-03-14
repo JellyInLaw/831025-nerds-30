@@ -32,9 +32,10 @@
 /*Fonts*/
 
 /*animations*/
-@keyframes shake {
+@-webkit-keyframes shake {
   0%,
   100% {
+    -webkit-transform: translateX(0);
     transform: translateX(0);
   }
   10%,
@@ -42,13 +43,46 @@
   50%,
   70%,
   90% {
+    -webkit-transform: translateX(-10px);
     transform: translateX(-10px);
   }
   20%,
   40%,
   60%,
   80% {
+    -webkit-transform: translateX(10px);
     transform: translateX(10px);
+  }
+}
+@keyframes shake {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+}
+
+@-webkit-keyframes modal-open {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
@@ -61,19 +95,12 @@
   }
 }
 
-@keyframes modal-close {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 2;
-  }
-}
 /*animations*/
 
 :root {
   --basic-black: #000;
   --basic-white: #fff;
+  --range-controls-button: #f1f1f1;
 
   --main-text-color: #283136;
   --contact-text-color: #666;
@@ -88,6 +115,7 @@
   --button-color-green-hover: #00bc6c;
   --button-color-green-active: #00aa62;
 
+  --button-active: rgba(255, 255, 255, 0.3);
   --button-active-shadow: rgba(0, 1, 1, 0.1);
 
   --button-color-yellow: #efc849;
@@ -112,6 +140,7 @@
   --current-slider-controls: #c1c1c1;
 
   --social-basic-color: #e1e1e1;
+  --social-link-active-shadow: rgba(0, 1, 1, 0.1);
 
   --catalog-win-color: rgba(77, 77, 77, 0.12);
   --catalog-win-color-hover: rgba(77, 77, 77, 1);
@@ -186,7 +215,7 @@
 }
 
 .button:active {
-  color: rgba(255, 255, 255, 0.3);
+  color: var(--button-active);
   -webkit-box-shadow: inset 0px 3px 0px var(--button-active-shadow);
   box-shadow: inset 0px 3px 0px var(--button-active-shadow);
 }
@@ -248,6 +277,7 @@
 }
 
 .basket-link {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding-top: 26px;
   height: 73px;
@@ -259,6 +289,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -680,7 +712,7 @@
   box-sizing: border-box;
   position: absolute;
   top: 114px;
-  background-color: #fff;
+  background-color: var(--basic-white);
   padding: 50px;
   width: 314px;
 }
@@ -723,8 +755,13 @@
 }
 
 .map {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
 }
 
@@ -802,7 +839,8 @@
 
 .social-link:active {
   background-color: var(--button-color-red-active);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  -webkit-box-shadow: inset 0px 3px 0px var(--social-link-active-shadow);
+  box-shadow: inset 0px 3px 0px var(--social-link-active-shadow);
 }
 
 .link-vk:active {
@@ -936,7 +974,7 @@
 
 .range-controls {
   height: 41px;
-  background-color: #f1f1f1;
+  background-color: var(--range-controls-button);
   border-radius: 5px;
   padding-top: 39px;
   margin-bottom: 14px;
@@ -1417,6 +1455,8 @@
 }
 
 .pagination-prev {
+  -webkit-box-ordinal-group: 0;
+  -ms-flex-order: -1;
   order: -1;
 }
 
@@ -1425,6 +1465,8 @@
 }
 
 .pagination-next {
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
   order: 1;
 }
 
@@ -1481,19 +1523,23 @@
   max-width: 960px;
   height: 590px;
   padding: 63px 100px 84px 100px;
-  background-color: white;
+  background-color: var(--basic-white);
   -webkit-box-shadow: 0px 20px 40px var(--modal-shadow);
   box-shadow: 0px 20px 40px var(--modal-shadow);
   z-index: 1;
 }
 
 .modal-error {
+  -webkit-animation-name: shake;
   animation-name: shake;
+  -webkit-animation-duration: 0.6s;
   animation-duration: 0.6s;
 }
 
 .modal-animation-open {
+  -webkit-animation-name: modal-open;
   animation-name: modal-open;
+  -webkit-animation-duration: 0.7s;
   animation-duration: 0.7s;
 }
 
@@ -1547,6 +1593,22 @@
 
 .modal-group .is-empty {
   border: 2px solid var(--button-color-red-hover);
+}
+
+.modal-group .is-empty::-webkit-input-placeholder {
+  color: var(--button-color-red-hover);
+}
+
+.modal-group .is-empty::-moz-placeholder {
+  color: var(--button-color-red-hover);
+}
+
+.modal-group .is-empty:-ms-input-placeholder {
+  color: var(--button-color-red-hover);
+}
+
+.modal-group .is-empty::-ms-input-placeholder {
+  color: var(--button-color-red-hover);
 }
 
 .modal-group .is-empty::placeholder {
