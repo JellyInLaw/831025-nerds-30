@@ -1113,41 +1113,21 @@
 .features-filter-item input + label::before {
   content: "";
   position: absolute;
-  width: 19px;
-  height: 19px;
-  border: 2px solid var(--radio-grey);
-  border-radius: 3px;
-  left: -36px;
-  top: -2px;
+  width: 25px;
+  height: 25px;
+  left: -37px;
+  top: -3px;
+  background: url(../img/checkbox-off.svg) no-repeat center center;
   opacity: 0.4;
 }
 
-.features-filter-item input:checked + label::after {
-  content: "";
-  position: absolute;
-  width: 25px;
-  height: 22px;
-  top: -2px;
-  left: -34px;
-  background: url(../img/shape-features-filter.svg) no-repeat center center;
-}
-
-.features-filter-item:hover input + label::before {
+.features-filter-item input[type="checkbox"]:hover + label::before {
   opacity: 1;
 }
 
-.features-filter-item:hover input:checked + label::after {
-  background: url(../img/shape-features-filter-not-opacity.svg) no-repeat center
-    center;
-}
-
-.features-filter-item input[type="checkbox"]:focus + label::before {
-  opacity: 1;
-}
-
-.features-filter-item input[type="checkbox"]:focus + label::after {
-  background: url(../img/shape-features-filter-not-opacity.svg) no-repeat center
-    center;
+.features-filter-item input:checked + label::before {
+  background: url(../img/checkbox-on.svg) no-repeat center center;
+  left: -36px;
 }
 
 .grid-filter-item input[disabled] + label::before,
