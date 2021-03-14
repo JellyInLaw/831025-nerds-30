@@ -108,6 +108,5 @@ for (let index = 0; index < controls.length; index++) {
 
     control.classList.add("current-slider-control");
     slides[index].classList.add("current-slide");
-    slides[index].classList.add("modal-animation-open");
   });
 }
